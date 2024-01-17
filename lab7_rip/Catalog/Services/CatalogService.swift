@@ -16,7 +16,7 @@ final class CatalogService {
     static let shared = CatalogService()
 
     func getCatalogData(with albumNumber: String?, price: String?, completion: @escaping (Result<[CatalogApiModel], Error>) -> Void) {
-        var urlString = "http:/192.168.1.74/equipment/"
+        var urlString = "http:/192.168.0.62/equipment/"
    
         
         if let albumNumber = albumNumber {
